@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PHOTO GALLERY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="" href="pg2.css">
+</head>
+
+<body>
+    <div class="heading">
+       WELCOME TO ANIMAL PLANET
+    </div>
+
+<!--PHOTO IS FROM ONLINE I DIDNT DOWNLOAD IT -->
+
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.8PIOv6_o0BmD4aO3g3cDbgHaHa&pid=Api&P=0&h=180" alt="F"></div>
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.S6QSEZXsY1_sGHV6MJDGtAHaEK&pid=Api&P=0&h=180" alt="1"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.JzDpIwItEB-LvJY60aB5wwHaEo&pid=Api&P=0&h=180" alt="2"></div>
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.FEMYTMJhWOrFk9d3ONb8NwHaEK&pid=Api&P=0&h=180" alt="3"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.WBCsgSHjTVvWksaAs992FgHaE7&pid=Api&P=0&h=180" alt="4"></div>
+            <div class="swiper-slide"><img src="https://tse2.mm.bing.net/th?id=OIP.2-2qOdHkgwdpPvrXgsnWbgHaEK&pid=Api&P=0&h=180" alt=""></div>
+            <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.HFTmUoLDugK0v-O-MHdM5QHaEc&pid=Api&P=0&h=180" alt="T"></div>
+            <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.nBWwGq72tktWrzJHFPY59QHaFj&pid=Api&P=0&h=180" alt="G"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.8vQsOAcdGphNiSt8F6vH8wHaE8&pid=Api&P=0&h=180" alt="D"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.aqiVTL-x4vFxD8BSQxpYlwHaE5&pid=Api&P=0&h=180" alt="E"></div>
+        </div>
+    </div>
+    <div style="--swiper-navigation-color: #81e6c3; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.8PIOv6_o0BmD4aO3g3cDbgHaHa&pid=Api&P=0&h=180" alt="1.1"></div>
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.S6QSEZXsY1_sGHV6MJDGtAHaEK&pid=Api&P=0&h=180"alt="1.2"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.JzDpIwItEB-LvJY60aB5wwHaEo&pid=Api&P=0&h=180" alt="1.3"></div>
+            <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.FEMYTMJhWOrFk9d3ONb8NwHaEK&pid=Api&P=0&h=180" alt="1.4"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.WBCsgSHjTVvWksaAs992FgHaE7&pid=Api&P=0&h=180" alt="1.5"></div>
+            <div class="swiper-slide"><img src="https://tse2.mm.bing.net/th?id=OIP.2-2qOdHkgwdpPvrXgsnWbgHaEK&pid=Api&P=0&h=180" alt="a"></div>
+            <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.HFTmUoLDugK0v-O-MHdM5QHaEc&pid=Api&P=0&h=180" alt="f"></div>
+            <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.nBWwGq72tktWrzJHFPY59QHaFj&pid=Api&P=0&h=180" alt="r"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.8vQsOAcdGphNiSt8F6vH8wHaE8&pid=Api&P=0&h=180" alt="b"></div>
+            <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.aqiVTL-x4vFxD8BSQxpYlwHaE5&pid=Api&P=0&h=180" alt="c"></div>
+        </div>
+                <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,                        
+            slidesPerView: 4,                        
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,   
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+
+</html>
